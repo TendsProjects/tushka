@@ -38,7 +38,7 @@ function appendMessage(text, sender = "server") {
     box.scrollTop = box.scrollHeight;
 }
 
-const socket = new WebSocket("ws://localhost:64536");
+const socket = new WebSocket("ws://192.168.130:64536");
 
 socket.onopen = () => {
     appendMessage("Соединение установлено", "server");
